@@ -19,5 +19,16 @@ code {
 
 .allPlants{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.singlePlant{
+  padding:25px
+}
+
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }

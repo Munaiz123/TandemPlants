@@ -6,6 +6,8 @@ import {
   Link,
   Switch
 } from "react-router-dom";
+import '../index.css';
+
 
 import Plants from "./Plants";
 import Calendar from "./Calendar";
