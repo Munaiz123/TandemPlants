@@ -16,6 +16,7 @@ class OfficePlants extends React.Component {
               <Card key={i} className="row">
                 <Card.Title>
                 <Link to={`/plants/${plant.name}`}>{plant.name}</Link>
+                {console.log(i)}
                 </Card.Title>
               </Card>
             ))}
