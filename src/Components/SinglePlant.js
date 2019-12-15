@@ -33,7 +33,7 @@ class SinglePlant extends React.Component {
             <div>
               <p>The Dates that this plants needs watering:</p>
               {currentPlantObj.dates.map(date => (
-                <li>{String(date._d)}</li>
+                <li>{String(date._d).split(' ').slice(0,4).join(' ')}</li>
               ))}
             </div>
           </div>
