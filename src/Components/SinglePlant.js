@@ -11,26 +11,31 @@ class SinglePlant extends React.Component {
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center"
+          flexDirection: "row",
+          alignItems: "flex-start",
+          justifyContent:'space-between'
+
         }}
       >
-        <div>
-          <h1>{currentPlantObj.name}</h1>
-        </div>
-        <div
+        <img
+          alt="plantPic"
+          src={currentPlantObj.img}
           style={{
-            display: "flex",
-            flexDirection: "row"
+            width: "35%",
+            height: "35%",
+            padding: "10px",
+            paddingLeft:'20px',
+            paddingRigt:'20px'
+
+            // margin: "25px"
           }}
-        >
-          <img
-            alt="plantPic"
-            src={currentPlantObj.img}
-            style={{ width: "35%", height: "35%", padding: "10px" }}
-          />
-          <div>
-            <h4>Water this plant every {currentPlantObj.water_after}</h4>
+        />
+        <div>
+          <div style={{paddingLeft:'15px'}}>
+            <h1>{currentPlantObj.name}</h1>
+            <h4 style={{ paddingBottom: "25px" }}>
+              Water this plant every {currentPlantObj.water_after}
+            </h4>
             <div>
               <h6>The Dates that this plants needs watering:</h6>
               <div
