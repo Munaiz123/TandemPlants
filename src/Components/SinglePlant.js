@@ -21,12 +21,22 @@ class SinglePlant extends React.Component {
         <div
           style={{
             display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly"
+            flexDirection: "row"
           }}
         >
-          <img src={currentPlantObj.img} style={{ width: "35%" }} />
-          <h6>Water every {currentPlantObj.water_after}</h6>
+          <img
+            src={currentPlantObj.img}
+            style={{ width: "35%", height: "35%", padding: "10px" }}
+          />
+          <div>
+            <h6>Water every {currentPlantObj.water_after}</h6>
+            <div>
+              <p>The Dates that this plants needs watering:</p>
+              {currentPlantObj.dates.map(date => (
+                <li>{String(date._d)}</li>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     );
