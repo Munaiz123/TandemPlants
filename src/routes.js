@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {withRouter, BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
+import {withRouter, Route} from 'react-router-dom'
 
 import Plants from './Components/Plants'
 import Calendar from './Components/Calendar'
