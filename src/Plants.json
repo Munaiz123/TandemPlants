@@ -1,46 +1,57 @@
   [
   {
     "name": "Fiddle Leaf Fig",
-    "water_after": "7 days"
+    "water_after": "7 days",
+    "img":"https://images.unsplash.com/photo-1505880904966-40d2fc2142f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
   },
   {
     "name": "Snake Plant",
-    "water_after": "14 days"
+    "water_after": "14 days",
+    "img":"https://images.unsplash.com/photo-1513492080443-fe1a22559fd6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
   },
   {
     "name": "Money Tree",
-    "water_after": "14 days"
+    "water_after": "14 days",
+    "img":"https://images.unsplash.com/photo-1561631968-33eac1e2186b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
   },
   {
     "name": "Bird's Nest Fern",
-    "water_after": "3 days"
+    "water_after": "3 days",
+    "img":"https://images.unsplash.com/photo-1545259741-2ea3ebf61fa3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
   },
   {
     "name": "Croton",
-    "water_after": "7 days"
+    "water_after": "7 days",
+    "img":"https://images.unsplash.com/photo-1572895635525-55e025d4e431?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
   },
   {
     "name": "Bell Pepper Plant",
-    "water_after": "3 days"
+    "water_after": "3 days",
+    "img":"https://images.unsplash.com/photo-1563576803153-bcc55ffb1be3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=949&q=80"
   },
   {
     "name": "Strawberry Plant",
-    "water_after": "3 days"
+    "water_after": "3 days",
+    "img":"https://images.unsplash.com/photo-1554196967-99af0c02a92a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80"
   },
   {
     "name": "Dracaena",
-    "water_after": "14 days"
+    "water_after": "14 days",
+    "img":"https://images.unsplash.com/photo-1525279844598-52fd0d3fecc2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
   },
   {
     "name": "Spider Plant",
-    "water_after": "7 days"
+    "water_after": "7 days",
+    "img":"https://i.redd.it/w9fb01bftmp21.jpg"
   },
   {
     "name": "Jade",
-    "water_after": "14 days"
+    "water_after": "14 days",
+    "img":"https://images.unsplash.com/photo-1573714000387-71694087c82e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
   },
   {
     "name": "Wavy Fern",
-    "water_after": "2 days"
+    "water_after": "2 days",
+    "img":"https://images.unsplash.com/photo-1528575718349-4523f6b3b8af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80"
   }
 ]
