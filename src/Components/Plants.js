@@ -20,20 +20,15 @@ plants.forEach(plant =>{
 
   while(currentDate < lastDay){
     let nextDate = moment(currentDate).add(plant.frequency,'days')
-    // console.log(plant.name, 'NEXTDAYYYY', nextDate._d.getDay())
+
     if(nextDate._d.getDay() === 0) nextDate = moment(nextDate).add(1,'d')
     if(nextDate._d.getDay() === 6) nextDate = moment(nextDate).subtract(1,'d')
-    if(nextDate._d.getDay() === 6 || nextDate._d.getDay() === 0) console.log('ERRRPRRPRPRPRP')
+
     dates.push(nextDate)
     currentDate = moment(nextDate)
   }
 
 })
-
-
-
-
-
 
 class OfficePlants extends React.Component {
   render() {
