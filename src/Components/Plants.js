@@ -3,6 +3,24 @@ import plants from "../Plants.json";
 import "../index.css";
 import { Card } from "react-bootstrap";
 import {Link} from 'react-router-dom'
+import moment from 'moment'
+
+let dayOne = moment().year(2019).month(11).date(16)
+plants.forEach(plant => plant['dates'] = [dayOne._d])
+plants.forEach(plant => plant['frequency'] = parseInt(plant.water_after.split(' ')[0]) )
+
+
+let lastDay = moment().year(2019).month(11).date(16).add(7,'weeks')
+console.log(lastDay)
+
+// plants.forEach(plant => {
+//   let currentDate = dayOne;
+
+// })
+
+
+
+
 
 
 class OfficePlants extends React.Component {
