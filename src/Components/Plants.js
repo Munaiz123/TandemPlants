@@ -6,17 +6,29 @@ import {Link} from 'react-router-dom'
 import moment from 'moment'
 
 let dayOne = moment().year(2019).month(11).date(16)
-plants.forEach(plant => plant['dates'] = [dayOne._d])
+plants.forEach(plant => plant['dates'] = [dayOne])
 plants.forEach(plant => plant['frequency'] = parseInt(plant.water_after.split(' ')[0]) )
 
 
-let lastDay = moment().year(2019).month(11).date(16).add(7,'weeks')
-console.log(lastDay)
 
-// plants.forEach(plant => {
-//   let currentDate = dayOne;
+plants.forEach(plant =>{
+  let firstDay = moment().year(2019).month(11).date(16)
+  let lastDay = moment().year(2019).month(12).date(16).add(7.5,'weeks')
+  let {dates} = plant
 
-// })
+  let currentDate = moment(firstDay)
+
+  while(currentDate < lastDay){
+    let nextDate = moment(currentDate).add(plant.frequency,'days')
+    // console.log(plant.name, 'NEXTDAYYYY', nextDate._d.getDay())
+    if(nextDate._d.getDay() === 0) nextDate = moment(nextDate).add(1,'d')
+    if(nextDate._d.getDay() === 6) nextDate = moment(nextDate).subtract(1,'d')
+    if(nextDate._d.getDay() === 6 || nextDate._d.getDay() === 0) console.log('ERRRPRRPRPRPRP')
+    dates.push(nextDate)
+    currentDate = moment(nextDate)
+  }
+
+})
 
 
 
@@ -34,7 +46,6 @@ class OfficePlants extends React.Component {
               <Card key={i} className="row">
                 <Card.Title>
                 <Link to={`/plants/${plant.name}`}>{plant.name}</Link>
-                {console.log(i)}
                 </Card.Title>
               </Card>
             ))}
