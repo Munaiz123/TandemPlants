@@ -1,5 +1,5 @@
-#### Welcome to Tandem Plants
-### By Munaiz Ahmed
+### Welcome to Tandem Plants
+#### By Munaiz Ahmed
 
 
 Hi Tandem !
@@ -24,6 +24,3 @@ Once you've forked and downloaded the respository, you should cd into the direct
 
 npm start opens the the app in the development mode.
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-
-
