@@ -1,5 +1,6 @@
 import React from "react";
 import plants from "../Plants.json";
+// import * as EventCalendar from 'react-event-calendar'
 
 class SinglePlant extends React.Component {
   render() {
@@ -13,7 +14,8 @@ class SinglePlant extends React.Component {
           display: "flex",
           flexDirection: "row",
           alignItems: "flex-start",
-          justifyContent:'space-between'
+          justifyContent:'space-between',
+          paddingTop:'35px'
 
         }}
       >
@@ -26,8 +28,6 @@ class SinglePlant extends React.Component {
             padding: "10px",
             paddingLeft:'20px',
             paddingRigt:'20px'
-
-            // margin: "25px"
           }}
         />
         <div>

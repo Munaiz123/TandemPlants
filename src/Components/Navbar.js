@@ -1,17 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
+import tandem from "../tandem.png";
 
 export default class Nav extends React.Component {
   render() {
     return (
-      <nav className="navbar">
-        <div className="navItem">
-          <Link to="/plants"> Plants</Link>
+      <div
+        style={{
+          padding: "35px",
+          backgroundColor: "pink",
+          display: "flex",
+          justifyContent: "flex-start",
+          alignItems:'flex-start'
+        }}
+      >
+        <div>
+          <img src={tandem} style={{ width: "65%" }} />
         </div>
-        <div className="navItem"></div>
-        <Link to="/calendar"> Calendar</Link>
-      </nav>
+        <div style={{display:'flex',}}>
+          <div className='item'>
+            <Link to="/"> Home</Link>
+          </div>
+          <div className='item'>
+            <Link to="/plants"> Plants</Link>
+          </div>
+          <div className='item'>
+            <Link to="/calendar"> Calendar</Link>
+          </div>
+        </div>
+      </div>
     );
   }
 }
