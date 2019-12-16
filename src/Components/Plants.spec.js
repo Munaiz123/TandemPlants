@@ -1,6 +1,8 @@
 const {expect} = require('chai')
 
 
+
 describe( 'Tandem Plants', () => {
-  it('renders dates')
+  it( 'Write Tests', ()=>{
+  })
 })

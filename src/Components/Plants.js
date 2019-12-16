@@ -13,6 +13,7 @@ plants.forEach(plant => plant['frequency'] = parseInt(plant.water_after.split(' 
 
 plants.forEach(plant =>{
   let firstDay = moment().year(2019).month(11).date(16)
+  console.log("firstDay", firstDay)
   let lastDay = moment().year(2019).month(12).date(16).add(7.5,'weeks')
   let {dates} = plant
 
@@ -32,7 +33,7 @@ plants.forEach(plant =>{
 
 class OfficePlants extends React.Component {
   render() {
-    console.log(plants);
+    // console.log(plants);
     return (
       <div className="container" >
         <div className='row justify-content-md-center'>
